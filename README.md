@@ -1,15 +1,15 @@
 # test-sah
 
-[![Release](https://img.shields.io/github/v/release/http://github.com/mirsazzathossain/test-sah)](https://img.shields.io/github/v/release/http://github.com/mirsazzathossain/test-sah)
-[![Build status](https://img.shields.io/github/actions/workflow/status/http://github.com/mirsazzathossain/test-sah/main.yml?branch=main)](https://github.com/http://github.com/mirsazzathossain/test-sah/actions/workflows/main.yml?query=branch%3Amain)
-[![codecov](https://codecov.io/gh/http://github.com/mirsazzathossain/test-sah/branch/main/graph/badge.svg)](https://codecov.io/gh/http://github.com/mirsazzathossain/test-sah)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/http://github.com/mirsazzathossain/test-sah)](https://img.shields.io/github/commit-activity/m/http://github.com/mirsazzathossain/test-sah)
-[![License](https://img.shields.io/github/license/http://github.com/mirsazzathossain/test-sah)](https://img.shields.io/github/license/http://github.com/mirsazzathossain/test-sah)
+[![Release](https://img.shields.io/github/v/release/mirsazzathossain/test-sah)](https://img.shields.io/github/v/release/mirsazzathossain/test-sah)
+[![Build status](https://img.shields.io/github/actions/workflow/status/mirsazzathossain/test-sah/main.yml?branch=main)](https://github.com/mirsazzathossain/test-sah/actions/workflows/main.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/mirsazzathossain/test-sah/branch/main/graph/badge.svg)](https://codecov.io/gh/mirsazzathossain/test-sah)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/mirsazzathossain/test-sah)](https://img.shields.io/github/commit-activity/m/mirsazzathossain/test-sah)
+[![License](https://img.shields.io/github/license/mirsazzathossain/test-sah)](https://img.shields.io/github/license/mirsazzathossain/test-sah)
 
 This is a template repository for Python projects that use uv for their dependency management.
 
-- **Github repository**: <https://github.com/http://github.com/mirsazzathossain/test-sah/>
-- **Documentation** <https://http://github.com/mirsazzathossain.github.io/test-sah/>
+- **Github repository**: <https://github.com/mirsazzathossain/test-sah/>
+- **Documentation** <https://mirsazzathossain.github.io/test-sah/>
 
 ## Getting started with your project
 
@@ -21,7 +21,7 @@ First, create a repository on GitHub with the same name as this project, and the
 git init -b main
 git add .
 git commit -m "init commit"
-git remote add origin git@github.com:http://github.com/mirsazzathossain/test-sah.git
+git remote add origin git@github.com:mirsazzathossain/test-sah.git
 git push -u origin main
 ```
 
@@ -63,8 +63,8 @@ To enable the code coverage reports, see [here](https://fpgmaas.github.io/cookie
 ## Releasing a new version
 
 - Create an API Token on [PyPI](https://pypi.org/).
-- Add the API Token to your projects secrets with the name `PYPI_TOKEN` by visiting [this page](https://github.com/http://github.com/mirsazzathossain/test-sah/settings/secrets/actions/new).
-- Create a [new release](https://github.com/http://github.com/mirsazzathossain/test-sah/releases/new) on Github.
+- Add the API Token to your projects secrets with the name `PYPI_TOKEN` by visiting [this page](https://github.com/github.com/mirsazzathossain/test-sah/settings/secrets/actions/new).
+- Create a [new release](https://github.com/github.com/mirsazzathossain/test-sah/releases/new) on Github.
 - Create a new tag in the form `*.*.*`.
 
 For more details, see [here](https://fpgmaas.github.io/cookiecutter-uv/features/cicd/#how-to-trigger-a-release).

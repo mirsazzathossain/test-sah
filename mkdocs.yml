@@ -1,11 +1,11 @@
 site_name: test-sah
-repo_url: https://github.com/http://github.com/mirsazzathossain/test-sah
-site_url: https://http://github.com/mirsazzathossain.github.io/test-sah
+repo_url: https://github.com/mirsazzathossain/test-sah
+site_url: https://mirsazzathossain.github.io/test-sah
 site_description: This is a template repository for Python projects that use uv for their dependency management.
 site_author: Mir Sazzat Hossain
 edit_uri: edit/main/docs/
 repo_name: http://github.com/mirsazzathossain/test-sah
-copyright: Maintained by <a href="https://http://github.com/mirsazzathossain.com">Florian</a>.
+copyright: Maintained by <a href="https://github.com/mirsazzathossain.com">Florian</a>.
 
 nav:
   - Home: index.md
@@ -43,7 +43,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/http://github.com/mirsazzathossain/test-sah
+      link: https://github.com/mirsazzathossain/test-sah
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/test-sah
 
