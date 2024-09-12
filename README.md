@@ -4,7 +4,7 @@
 [![Build status](https://img.shields.io/github/actions/workflow/status/mirsazzathossain/test-sah/main.yml?branch=main)](https://github.com/mirsazzathossain/test-sah/actions/workflows/main.yml?query=branch%3Amain)
 [![codecov](https://codecov.io/gh/mirsazzathossain/test-sah/branch/main/graph/badge.svg)](https://codecov.io/gh/mirsazzathossain/test-sah)
 [![Commit activity](https://img.shields.io/github/commit-activity/m/mirsazzathossain/test-sah)](https://img.shields.io/github/commit-activity/m/mirsazzathossain/test-sah)
-[![License](https://img.shields.io/github/license/mirsazzathossain/test-sah)](https://img.shields.io/github/license/mirsazzathossain/test-sah)
+[![License](https://img.shields.io/github/license/mirsazzathossain/test-sah?label=license)](https://img.shields.io/github/license/mirsazzathossain/test-sah?label=license)
 
 This is a template repository for Python projects that use uv for their dependency management.
 
