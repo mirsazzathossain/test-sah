@@ -1,8 +1,30 @@
 # CHANGELOG
 
+## v0.2.0 (2024-09-13)
+
+### Chore
+
+* chore(release): Update commit message format for semantic release ([`a98ade2`](https://github.com/mirsazzathossain/test-sah/commit/a98ade2e9d3e47bfb1dcb8f1990371d54be7636d))
+
+### Feature
+
+* feat: Add tests for foo2 and foo3
+
+Add tests for the new functions foo2 and foo3 in the `test_foo` module. ([`f573e63`](https://github.com/mirsazzathossain/test-sah/commit/f573e63b71b5bedc2b9e0cd5e8b6ab99eda060ed))
+
+### Refactor
+
+* refactor: Add new function foo3 with detailed documentation
+
+Add a new function foo3 to the foo.py module. This function takes a string argument &#39;bar&#39; and returns a string. The function is documented with a summary line and an extended description, including details about the input argument and return value.
+
+Refactor the code to include this new function. ([`28cd828`](https://github.com/mirsazzathossain/test-sah/commit/28cd82844faa31d8beca552535e40e30cb1091a9))
+
 ## v0.1.0 (2024-09-13)
 
 ### Chore
+
+* chore(release): v0.1.0 [skip ci] ([`6308b24`](https://github.com/mirsazzathossain/test-sah/commit/6308b243c16be114bfb02ee2bc41bd7f9896fac7))
 
 * chore: add .prettierignore file ([`b6f8acd`](https://github.com/mirsazzathossain/test-sah/commit/b6f8acd97bd5dd094003c729d76ec4c54b3046c7))
 
