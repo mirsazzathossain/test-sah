@@ -22,9 +22,9 @@ jobs:
         uses: python-semantic-release/python-semantic-release@v9.8.8
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit: "chore(release): release version ${{ steps.release.outputs.version }} [skip ci]"
-          tag: "v${{ steps.release.outputs.version }}"
-          changelog: CHANGELOG.md
+          commit: true
+          tag: true
+          changelog: true
 
       - name: Publish package distributions to GitHub Releases
         uses: python-semantic-release/upload-to-gh-release@v9.8.8
