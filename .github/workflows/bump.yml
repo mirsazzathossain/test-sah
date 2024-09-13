@@ -19,7 +19,7 @@ jobs:
 
       - name: Python Semantic Release
         id: release
-        uses: python-semantic-release/python-semantic-release
+        uses: python-semantic-release/python-semantic-release@v9.8.8
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           commit: "chore(release): release version ${{ steps.release.outputs.version }} [skip ci]"
@@ -27,7 +27,7 @@ jobs:
           changelog: CHANGELOG.md
 
       - name: Publish package distributions to GitHub Releases
-        uses: python-semantic-release/upload-to-gh-release
+        uses: python-semantic-release/upload-to-gh-release@v9.8.8
         if: steps.release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
