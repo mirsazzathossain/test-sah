@@ -104,7 +104,7 @@ source = ["test_sah"]
 [tool.semantic_release]
 assets = []
 build_command_env = []
-commit_message = "chore(release): v{version} [skip ci]"
+commit_message = "chore(release): v{version}"
 commit_parser = "angular"
 logging_use_named_masks = false
 major_on_zero = true
@@ -115,6 +115,7 @@ tag_format = "v{version}"
 version_toml = [
     "pyproject.toml:project.version",
 ]
+build_command = "uv build"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
