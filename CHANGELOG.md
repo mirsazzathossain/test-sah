@@ -1,8 +1,16 @@
 # CHANGELOG
 
+## v0.6.0 (2024-09-13)
+
+### Feature
+
+* feat: Update PyPI repository URL in cd.yml ([`d5c9707`](https://github.com/mirsazzathossain/test-sah/commit/d5c9707799c28af5c9028800b7431cb4959dfa33))
+
 ## v0.5.0 (2024-09-13)
 
 ### Chore
+
+* chore(release): update version to 0.5.0 ([`14f9c42`](https://github.com/mirsazzathossain/test-sah/commit/14f9c42079f6500b8e5906d897f1b7439e322055))
 
 * chore: Update GitHub Actions workflows for continuous distribution and release ([`57e4e53`](https://github.com/mirsazzathossain/test-sah/commit/57e4e535e06c6f9ee505f76a9d449bc295f79e46))
 
