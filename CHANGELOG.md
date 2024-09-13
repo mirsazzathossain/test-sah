@@ -1,8 +1,16 @@
 # CHANGELOG
 
+## v0.3.0 (2024-09-13)
+
+### Feature
+
+* feat: Update dev dependencies in pyproject.toml ([`cc6782c`](https://github.com/mirsazzathossain/test-sah/commit/cc6782ce1f489181387d9d4910058b0ae381dea5))
+
 ## v0.2.0 (2024-09-13)
 
 ### Chore
+
+* chore(release): v0.2.0 ([`fd1a341`](https://github.com/mirsazzathossain/test-sah/commit/fd1a3416922f0c8b196a2236fdda795898a9c9aa))
 
 * chore(release): Update commit message format for semantic release ([`a98ade2`](https://github.com/mirsazzathossain/test-sah/commit/a98ade2e9d3e47bfb1dcb8f1990371d54be7636d))
 
