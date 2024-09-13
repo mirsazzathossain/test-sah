@@ -26,19 +26,17 @@ jobs:
         run: make check
 
   tests-and-type-check:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
+        platform: ["ubuntu-latest", "macos-latest", "windows-latest"]
         python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
       fail-fast: false
-    defaults:
-      run:
-        shell: bash
+    runs-on: ${{ matrix.platform }}
     steps:
       - name: Check out
         uses: actions/checkout@v4
 
-      - name: Set up the environment
+      - name: Set up Python ${{ matrix.python-version }}
         uses: ./.github/actions/setup-python-env
         with:
           python-version: ${{ matrix.python-version }}
@@ -64,3 +62,10 @@ jobs:
 
       - name: Check if documentation can be built
         run: uv run mkdocs build -s
+
+  release-drafter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Draft a release
+        uses: release-drafter/release-drafter@v5
