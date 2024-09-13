@@ -5,6 +5,7 @@
 [![codecov](https://codecov.io/gh/mirsazzathossain/test-sah/branch/main/graph/badge.svg)](https://codecov.io/gh/mirsazzathossain/test-sah)
 [![Commit activity](https://img.shields.io/github/commit-activity/m/mirsazzathossain/test-sah)](https://img.shields.io/github/commit-activity/m/mirsazzathossain/test-sah)
 [![License](https://img.shields.io/github/license/mirsazzathossain/test-sah?label=license)](https://img.shields.io/github/license/mirsazzathossain/test-sah?label=license)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 This is a template repository for Python projects that use uv for their dependency management.
 
