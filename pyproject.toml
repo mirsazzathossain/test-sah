@@ -23,7 +23,8 @@ dev-dependencies = [
     "ruff>=0.0.235",
     "mkdocs>=1.4.2",
     "mkdocs-material>=8.5.10",
-    "mkdocstrings[python]>=0.19.0"
+    "mkdocstrings[python]>=0.19.0",
+    "python-semantic-release>=9.8.8",
 ]
 
 [build-system]
@@ -99,3 +100,63 @@ source = ["test_sah"]
 
 [tool.ruff.per-file-ignores]
 "tests/*" = ["S101"]
+
+[tool.semantic_release]
+assets = []
+build_command_env = []
+commit_message = "chore(release): update version to {version}"
+commit_parser = "angular"
+logging_use_named_masks = false
+major_on_zero = true
+allow_zero_version = true
+repo_dir = "/media/drive1/sazzat/test-sah"
+no_git_verify = false
+tag_format = "v{version}"
+version_toml = [
+    "pyproject.toml:project.version",
+]
+build_command = "uv build"
+
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease_token = "rc"
+prerelease = false
+
+[tool.semantic_release.changelog]
+template_dir = "templates"
+changelog_file = "CHANGELOG.md"
+exclude_commit_patterns = []
+
+[tool.semantic_release.changelog.environment]
+block_start_string = "{%"
+block_end_string = "%}"
+variable_start_string = "{{"
+variable_end_string = "}}"
+comment_start_string = "{#"
+comment_end_string = "#}"
+trim_blocks = false
+lstrip_blocks = false
+newline_sequence = "\n"
+keep_trailing_newline = false
+extensions = []
+autoescape = true
+
+[tool.semantic_release.commit_author]
+env = "GIT_COMMIT_AUTHOR"
+default = "semantic-release <semantic-release>"
+
+[tool.semantic_release.commit_parser_options]
+allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
+minor_tags = ["feat"]
+patch_tags = ["fix", "perf"]
+default_bump_level = 0
+
+[tool.semantic_release.remote]
+name = "origin"
+type = "github"
+ignore_token_for_push = false
+insecure = false
+
+[tool.semantic_release.publish]
+dist_glob_patterns = ["dist/*"]
+upload_to_vcs_release = true
