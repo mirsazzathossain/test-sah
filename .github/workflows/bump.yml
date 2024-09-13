@@ -1,0 +1,33 @@
+name: Semantic Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    concurrency: release
+    permissions:
+      id-token: write
+
+    steps:
+      - uses: actions/checkout
+        with:
+          fetch-depth: 0
+
+      - name: Python Semantic Release
+        id: release
+        uses: python-semantic-release/python-semantic-release
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit: "chore(release): release version ${{ steps.release.outputs.version }} [skip ci]"
+          tag: "v${{ steps.release.outputs.version }}"
+          changelog: CHANGELOG.md
+
+      - name: Publish package distributions to GitHub Releases
+        uses: python-semantic-release/upload-to-gh-release
+        if: steps.release.outputs.released == 'true'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
