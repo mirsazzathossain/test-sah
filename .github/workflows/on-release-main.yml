@@ -1,43 +1,43 @@
-name: release-main
+# name: release-main
 
-on:
-  release:
-    types: [published]
-    branches: [main]
+# on:
+#   release:
+#     types: [published]
+#     branches: [main]
 
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out
-        uses: actions/checkout@v4
+# jobs:
+#   publish:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check out
+#         uses: actions/checkout@v4
 
-      - name: Set up the environment
-        uses: ./.github/actions/setup-python-env
+#       - name: Set up the environment
+#         uses: ./.github/actions/setup-python-env
 
-      - name: Download updated pyproject.toml
-        uses: actions/download-artifact@v4
-        with:
-          name: pyproject-toml
+#       - name: Download updated pyproject.toml
+#         uses: actions/download-artifact@v4
+#         with:
+#           name: pyproject-toml
 
-      - name: Build package
-        run: uvx --from build pyproject-build --installer uv
+#       - name: Build package
+#         run: uvx --from build pyproject-build --installer uv
 
-      - name: Publish package
-        run: uvx twine upload dist/*
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+#       - name: Publish package
+#         run: uvx twine upload dist/*
+#         env:
+#           TWINE_USERNAME: __token__
+#           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
 
-  deploy-docs:
-    needs: publish
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out
-        uses: actions/checkout@v4
+#   deploy-docs:
+#     needs: publish
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check out
+#         uses: actions/checkout@v4
 
-      - name: Set up the environment
-        uses: ./.github/actions/setup-python-env
+#       - name: Set up the environment
+#         uses: ./.github/actions/setup-python-env
 
-      - name: Deploy documentation
-        run: uv run mkdocs gh-deploy --force
+#       - name: Deploy documentation
+#         run: uv run mkdocs gh-deploy --force

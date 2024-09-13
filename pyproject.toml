@@ -115,7 +115,6 @@ tag_format = "v{version}"
 version_toml = [
     "pyproject.toml:project.version",
 ]
-build_command = "uv build"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
